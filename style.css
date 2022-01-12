@@ -66,7 +66,7 @@ body{
 #header{
     width: 100vw;
     height: calc(100vh - 130px);
-    background-image: url(./img/rain-4.jpg);
+    background-image: url(./img/bg.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -74,7 +74,62 @@ body{
 }
 
 .header{
-    width: inherit;
-    height: inherit;
+    width: 100vw;
+    height: 100vh;
     background: linear-gradient(0deg,rgba(255, 255, 255, 0.199) 10%,transparent 90%);
+}
+
+#photos{
+    width: 100vw;
+    height: 90vh;
+    margin-top: 65px;
+}
+
+#photos h1{
+    text-align: center;
+}
+
+.title--photos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 65px;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    width: 100vw;
+}
+
+.photos img{
+    max-width: 30%;
+}
+
+.photos .gallery--1,
+.photos .gallery--2,
+.photos .gallery--3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.photos .gallery--1 img,
+.photos .gallery--2 img,
+.photos .gallery--3 img{
+    padding: 0 2em;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #e75a7c;
+}
+.footer p{
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0.5rem;
 }
