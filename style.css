@@ -4,19 +4,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Slab';
+    max-width: 100vw;
 }
 
 body{
     font-size: 10px;    
     background-color: #f2f5ea;
+    /* overflow-x: hidden !important; */
 }
 
 .title{
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     font-weight: 600;
     letter-spacing: 0.3rem; 
-    margin-left: -90px;
-    margin-right: -65px;
     color: #2c363f;
 }
 
@@ -32,15 +32,12 @@ body{
 .links{
     display: flex;
     flex-direction: row;
-    margin-left: 45px;
 }
 
 .links li{
-    margin-right: 0;
     font-size: 1.4rem;
     font-weight: 500;
     list-style-type: none;   
-    padding-left: 20px; 
 }
 
 .links li a{
@@ -53,14 +50,12 @@ body{
     font-weight: 600;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 1em 2em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 1rem;
-    margin: 4px 2px;
     cursor: pointer;
-    margin-right: 65px;
 }
 
 #header{
@@ -75,13 +70,12 @@ body{
 
 .header{
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 130px);
     background: linear-gradient(0deg,rgba(255, 255, 255, 0.199) 10%,transparent 90%);
 }
 
 #photos{
     width: 100vw;
-    height: 90vh;
     margin-top: 65px;
 }
 
@@ -120,8 +114,36 @@ body{
     padding: 0 2em;
 }
 
+#about{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fbf7f4;
+}
+
+.about img{
+    max-width: 40%;
+    margin: 5rem 0 0 40rem;
+}
+
+.about .description{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.about .description img{
+    padding: 0 2em;
+}
+
+.about #info {
+    width: 700px;
+    height: 350px;
+    background: white;
+  }
+
 .footer{
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -130,6 +152,7 @@ body{
 .footer p{
     text-align: center;
     font-size: 1.2rem;
+    font-weight: 500;
     color: white;
-    margin: 0.5rem;
+    padding: 1.5em 0;
 }
